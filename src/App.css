@@ -1,6 +1,7 @@
 @import "./css/home.css";
 @import "./css/header.css";
 @import "./css/footer.css";
+@import "./css/product.css";
 
 /* 這邊是基本ㄉ顏色 */
 :root {
@@ -9,6 +10,7 @@
   --jjLeaf: #cbdfbd;
   --jjSalmon: #f19c79;
   --jjChoco: #895d42;
+  --jjLightChoco:#a98976;
 }
 
 body {
