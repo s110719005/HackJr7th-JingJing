@@ -1,6 +1,6 @@
 import { useContext,useState } from "react";
 import { Layout } from 'antd';
-import JJHeader from "../components/header";
+import JJHeader from "../components/Header";
 //import { StoreContext } from "../store"
 
 const { Header, Content, Footer } = Layout;

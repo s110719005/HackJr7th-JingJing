@@ -1,9 +1,11 @@
 import { useContext,useState } from "react";
 import { Layout } from 'antd';
-import JJHeader from "../components/header";
+import JJHeader from "../components/Header";
 
 
 import * as QueryString from "query-string";
+import SignUpCard from "../components/SignUp/SignUpCard";
+import SignInCard from "../components/SignIn/SignInCard";
 
 
 //import { StoreContext } from "../store"
@@ -18,6 +20,8 @@ function SignInUp(props) {
     <div className="login-main-area">
         <JJHeader/>
         LogIn
+        <SignInCard/>
+        <SignUpCard/>
     </div>
   );
 }
