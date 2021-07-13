@@ -35,7 +35,11 @@ export default function Header() {
               <div className="text-white">登入/註冊</div>
             </Link>
             <Link to="/SignInUp?redirect=Account">
-              <div className="text-white">購物車</div>
+              <img
+                src="https://github.com/Singularity-v/7th-Hach/blob/main/cart.png?raw=true"
+                alt="Background"
+                className=""
+              />
             </Link>
           </div>
         ) : (
@@ -55,7 +59,11 @@ export default function Header() {
               <div className="text-white">會員</div>
             </Link>
             <Link to="/SignInUp?redirect=Account">
-              <div className="text-white">購物車</div>
+              <img
+                src="https://github.com/Singularity-v/7th-Hach/blob/main/cart.png?raw=true"
+                alt="Background"
+                className=""
+              />
             </Link>
           </div>
         )}
