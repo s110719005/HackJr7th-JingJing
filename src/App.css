@@ -1,28 +1,30 @@
-@import './css/home.css';
-@import './css/header.css';
-
+@import "./css/home.css";
+@import "./css/header.css";
 
 /* 這邊是基本ㄉ顏色 */
 :root {
   --jjGrass: #d4e09b;
   --jjLemon: #f6f4d2;
-  --jjLeaf:#cbdfbd;
-  --jjSalmon:#f19c79;
-  --jjChoco:#895d42;
+  --jjLeaf: #cbdfbd;
+  --jjSalmon: #f19c79;
+  --jjChoco: #895d42;
 }
 
-body{
+body {
   background-color: var(--jjLeaf);
 }
 
 /* 基本字型規範 */
-.text-white{
-  font-family: 'Roboto Mono', monospace;
-  color:white;
+.text-white {
+  font-family: "Roboto Mono", monospace;
+  color: white;
   text-decoration: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+.hello {
+  /* test */
+}
