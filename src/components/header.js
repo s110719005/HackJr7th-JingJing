@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-
+import { Menu, Dropdown, Space } from "antd";
 import { StoreContext } from "../store";
 
 export default function Header() {
@@ -15,59 +15,81 @@ export default function Header() {
     if (remember) localStorage.setItem("userInfo", JSON.stringify(userInfo));
     else localStorage.removeItem("userInfo");
   }, [userInfo, remember]);
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com"
+        >
+          1st menu item
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.aliyun.com"
+        >
+          2nd menu item
+        </a>
+      </Menu.Item>
+    </Menu>
+  );
   return (
-    <div className="header text-white">
-      <div className="header text-white">
-        {userInfo === null ? (
-          <div>
-            <div>淨・靚</div>
-            <Link to="/">
-              <div className="text-white">首頁</div>
-            </Link>
-            <Link to="/">
-              <div className="text-white">商品</div>
-            </Link>
-            <Link to="/">
-              <div className="text-white">關於</div>
-            </Link>
+    <div className="header">
+      <div>淨・靚</div>
+      {userInfo === null ? (
+        <div>
+          <Link to="/">
+            <div className="page-name text-choco">首頁</div>
+          </Link>
+          <Link to="/">
+            <div className="page-name text-choco">商品</div>
+          </Link>
+          <Link to="/">
+            <div className="page-name text-choco">關於</div>
+          </Link>
 
-            <Link to="/SignInUp?redirect=Account">
-              <div className="text-white">登入/註冊</div>
-            </Link>
-            <Link to="/SignInUp?redirect=Account">
-              <img
-                src="https://github.com/Singularity-v/7th-Hach/blob/main/cart.png?raw=true"
-                alt="Background"
-                className=""
-              />
-            </Link>
-          </div>
-        ) : (
-          <div>
-            <div>淨・靚</div>
-            <Link to="/">
-              <div className="text-white">首頁</div>
-            </Link>
-            <Link to="/">
-              <div className="text-white">商品</div>
-            </Link>
-            <Link to="/">
-              <div className="text-white">關於</div>
-            </Link>
-
-            <Link to="/SignInUp?redirect=Account">
-              <div className="text-white">會員</div>
-            </Link>
-            <Link to="/SignInUp?redirect=Account">
-              <img
-                src="https://github.com/Singularity-v/7th-Hach/blob/main/cart.png?raw=true"
-                alt="Background"
-                className=""
-              />
-            </Link>
-          </div>
-        )}
-      </div>
+          <Link to="/SignInUp?redirect=Account">
+            <div className="page-name text-choco">登入/註冊</div>
+          </Link>
+          <Link to="/SignInUp?redirect=Account">
+            <img
+              src="https://github.com/Singularity-v/7th-Hach/blob/main/HOME/cart.png?raw=true"
+              alt="Cart"
+              className=""
+            />
+          </Link>
+        </div>
+      ) : (
+        <div>
+          <Link to="/">
+            <div className="page-name text-choco">首頁</div>
+          </Link>
+          <Link to="/">
+            <div className="page-name text-choco">商品</div>
+          </Link>
+          <Link to="/">
+            <div className="page-name text-choco">關於</div>
+          </Link>
+          <Dropdown overlay={menu} placement="bottomCenter">
+            <div className="page-name">
+              <Link to="/SignInUp?redirect=Account" className="text-choco">
+                會員
+              </Link>
+            </div>
+          </Dropdown>
+          <Link to="/SignInUp?redirect=Account">
+            <img
+              src="https://github.com/Singularity-v/7th-Hach/blob/main/HOME/cart.png?raw=true"
+              alt="Cart"
+              className=""
+            />
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

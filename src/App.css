@@ -20,7 +20,15 @@ body {
   color: white;
   text-decoration: none;
 }
+.text-choco {
+  font-family: "Roboto Mono", monospace;
+  color: var(--jjChoco);
+  text-decoration: none;
+}
 
 a {
+  text-decoration: none;
+}
+link {
   text-decoration: none;
 }

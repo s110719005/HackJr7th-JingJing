@@ -1,9 +1,25 @@
-.header{
-    background-color: var(--jjChoco);
-    text-align: center;
-    line-height: 4rem;
-    height:4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+.header {
+  background-color: white;
+  text-align: center;
+  line-height: 8rem;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.page-name {
+  display: inline;
+  margin: 50px;
+}
+.page-name:hover {
+  border: solid var(--jjChoco) 1.5px;
+  padding: 10px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-bottom: -7px;
+  /* border: solid red; */
+}
