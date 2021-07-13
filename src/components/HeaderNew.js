@@ -15,28 +15,7 @@ export default function Header() {
     if (remember) localStorage.setItem("userInfo", JSON.stringify(userInfo));
     else localStorage.removeItem("userInfo");
   }, [userInfo, remember]);
-  const menu = (
-    <Menu>
-      <Menu.Item>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com"
-        >
-          1st menu item
-        </a>
-      </Menu.Item>
-      <Menu.Item>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.aliyun.com"
-        >
-          2nd menu item
-        </a>
-      </Menu.Item>
-    </Menu>
-  );
+
   return (
     <div className="header">
       <div>淨・靚</div>
@@ -74,13 +53,13 @@ export default function Header() {
           <Link to="/">
             <div className="page-name text-choco">關於</div>
           </Link>
-          <Dropdown overlay={menu} placement="bottomCenter">
-            <div className="page-name">
-              <Link to="/SignInUp?redirect=Account" className="text-choco">
-                會員
-              </Link>
-            </div>
-          </Dropdown>
+
+          <div className="page-name">
+            <Link to="/SignInUp?redirect=Account" className="text-choco">
+              會員
+            </Link>
+          </div>
+
           <Link to="/SignInUp?redirect=Account">
             <img
               src="https://github.com/Singularity-v/7th-Hach/blob/main/HOME/cart.png?raw=true"
