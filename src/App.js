@@ -18,6 +18,8 @@ function App() {
           <Route exact path="/Account" component={Account} />
           <Route exact path="/SignInUp" component={SignInUp}/>
           <Route exact path="/Product" component={Product}/>
+          <Route exact path="/Product/:pageName" component={Product} />
+
         </Switch>
       </BrowserRouter>
     </StoreProvider>

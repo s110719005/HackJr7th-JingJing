@@ -1,6 +1,6 @@
 import { useContext,useState } from "react";
 import { Layout } from 'antd';
-import JJHeader from "../components/Header";
+import JJHeader from "../components/HeaderNew";
 
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";

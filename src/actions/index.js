@@ -1,4 +1,11 @@
 import {
+    //basic
+    SET_PAGE_CONTENT,
+    SET_NAVBAR_ACTIVEITEM,
+    //product
+    BEGIN_PRODUCTS_REQUEST,
+    SUCCESS_PRODUCTS_REQUEST,
+    FAIL_PRODUCTS_REQUEST,
     //login
     BEGIN_LOGIN_REQUEST,
     SUCCESS_LOGIN_REQUEST,
@@ -11,13 +18,37 @@ import {
   } from "../utils/constants";
 
   import {
-    
+    //product
+    getProducts,
+    //sign in
     signInWithEmailPassword,
-    registerWithEmailPassword,
     signOut,
     checkLoginApi,
+    //register
+    registerWithEmailPassword,
     
   }from "../api"
+
+  export const setPage = async (dispatch, url, title) => {
+    let products = [];
+    dispatch({ type: BEGIN_PRODUCTS_REQUEST });
+    try {
+      products = await getProducts(url);
+      dispatch({
+        type: SET_PAGE_CONTENT,
+        payload: { title, products },
+      });
+      dispatch({
+        type: SET_NAVBAR_ACTIVEITEM,
+        payload: url,
+      });
+      dispatch({ type: SUCCESS_PRODUCTS_REQUEST });
+      
+    } catch (error) {
+      console.log(error);
+      dispatch({ type: FAIL_PRODUCTS_REQUEST, payload: error });
+    }
+  };
 
   export const loginToFirebase = async (dispatch, userInfo) => {
     dispatch({ type: BEGIN_LOGIN_REQUEST });

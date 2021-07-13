@@ -1,6 +1,6 @@
 import { useContext,useState } from "react";
 import { Layout } from 'antd';
-import JJHeader from "../components/Header";
+import JJHeader from "../components/HeaderNew";
 
 
 import * as QueryString from "query-string";

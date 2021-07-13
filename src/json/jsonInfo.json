@@ -1,0 +1,17 @@
+[   
+    {
+       "title": "All",
+       "name": "products",
+       "url": "/Product/All"
+    },
+    {
+       "title": "Toner",
+       "name": "toner",
+       "url": "/Product/Toner"
+    },
+    {
+       "title": "Eyeshadow",
+       "name": "eyeshadow",
+       "url": "/Product/Eyeshadow"
+    }
+ ]

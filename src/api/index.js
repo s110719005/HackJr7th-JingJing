@@ -1,6 +1,8 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import jsonInfo from "../json/jsonInfo.json";
+
 
 // INITIALIZE FIREBASE
 const firebaseConfig = {
@@ -15,12 +17,33 @@ const firebaseConfig = {
   };
 
 firebase.initializeApp(firebaseConfig);
-
+//ALL PRODUCTS
+const allProductsCollectionRef = firebase.firestore().collection("allProducts");
 //SAVE USER PUBLIC DATA
 const allUserRef = firebase.firestore().collection("allUser");
 
 //REFERENCE AUTH
 const auth = firebase.auth();
+
+export const getProducts = async (url) => {
+  const collection = jsonInfo.find(element => element.url === url);
+  //console.log(jsonInfo.find(element => element.url === url));
+  const collectionName = collection.name || "products";
+  //const collectionName = "allProducts";
+  
+  let jsonProducts = [];
+
+  // QUERY PRODUCTS
+  let querySnapshot;
+  if (collectionName === "products")
+    querySnapshot = await allProductsCollectionRef.get();
+  else
+    querySnapshot = await allProductsCollectionRef.where("category", "==", collectionName).get();
+  querySnapshot.forEach((doc) => {
+    jsonProducts.push(doc.data());
+  });
+  return jsonProducts;
+}
 
 export const signInWithEmailPassword = async (email, password) => {
     return await auth.signInWithEmailAndPassword(email, password);

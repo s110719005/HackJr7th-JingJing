@@ -3,6 +3,13 @@ import useReducerWithThunk from "use-reducer-thunk";
 
 
 import {
+    //basic
+    SET_PAGE_CONTENT,
+    SET_NAVBAR_ACTIVEITEM,
+    //product
+    BEGIN_PRODUCTS_REQUEST,
+    SUCCESS_PRODUCTS_REQUEST,
+    FAIL_PRODUCTS_REQUEST,
     //login
     BEGIN_LOGIN_REQUEST,
     SUCCESS_LOGIN_REQUEST,
@@ -40,6 +47,17 @@ import {
   }
 
 const initialState = {
+    page: {
+      products:[],
+    },
+    navBar: {
+      activeItem: "/",
+    },
+    //product
+    requestProducts: {
+      loading: false,
+      error: null,
+    },
     cart: {
         cartItems,
         shippingAddress,
@@ -69,18 +87,38 @@ const initialState = {
 
 function reducer(state, action) {
     switch (action.type) {
-  
-    case BEGIN_LOGIN_REQUEST:
-        return { ...state, userSignin: { ...state.userSignin, loading: true } };
-        case SUCCESS_LOGIN_REQUEST:
+      //basic
+      case SET_PAGE_CONTENT:
+      return {
+        ...state,
+        page: action.payload,
+      };
+      case SET_NAVBAR_ACTIVEITEM:
         return {
-            ...state,
-            userSignin: {
-                ...state.userSignin,
-                loading: false,
-                userInfo: action.payload,
-                error: "",
-            },
+          ...state,
+          navBar: {
+            activeItem: action.payload,
+          },
+        };
+      //product request
+      case BEGIN_PRODUCTS_REQUEST:
+        return { ...state, requestProducts: { ...state.requestProducts, loading: true } }
+      case SUCCESS_PRODUCTS_REQUEST:
+        return { ...state, requestProducts: { ...state.requestProducts, loading: false } }
+      case FAIL_PRODUCTS_REQUEST:
+        return { ...state, requestProducts: { ...state.requestProducts, loading: false, error: action.payload } }
+      //login
+      case BEGIN_LOGIN_REQUEST:
+          return { ...state, userSignin: { ...state.userSignin, loading: true } };
+          case SUCCESS_LOGIN_REQUEST:
+          return {
+              ...state,
+              userSignin: {
+                  ...state.userSignin,
+                  loading: false,
+                  userInfo: action.payload,
+                  error: "",
+              },
         };
         case FAIL_LOGIN_REQUEST:
         return {
