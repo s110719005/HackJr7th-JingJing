@@ -4,8 +4,7 @@ import { useHistory } from "react-router-dom";
 import { Menu, Dropdown, Space } from "antd";
 import { StoreContext } from "../store";
 import HeaderNavItem from "./HeaderNavItem";
-import {headerActiveNavItemSet } from '../actions'
-
+import { headerActiveNavItemSet } from "../actions";
 
 export default function Header() {
   const { state, dispatch } = useContext(StoreContext);
@@ -27,28 +26,45 @@ export default function Header() {
   return (
     <div className="header">
       <div className="logo-container">
-        <div>
-          logo
-        </div>
+        {/* <div>logo</div> */}
         <div className="logo-text">
-          淨・靚
+          <img
+            src="https://github.com/yuumaker/7th-hack/blob/main/logo/logo.png?raw=true"
+            alt="Cart"
+          />
         </div>
       </div>
       {userInfo === null ? (
         <div className="header-row">
-          <HeaderNavItem to="/" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">首頁</div>
           </HeaderNavItem>
           {/* <Link to="/">
           </Link> */}
-          <HeaderNavItem to="/Product/All" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/Product/All"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">商品</div>
           </HeaderNavItem>
-          <HeaderNavItem to="/About" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/About"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">關於</div>
           </HeaderNavItem>
 
-          <HeaderNavItem to="/SignInUp" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/SignInUp"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">登入/註冊</div>
           </HeaderNavItem>
           <Link to="/SignInUp?redirect=Account">
@@ -61,18 +77,33 @@ export default function Header() {
         </div>
       ) : (
         <div className="header-row">
-          <HeaderNavItem to="/" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">首頁</div>
           </HeaderNavItem>
-          <HeaderNavItem to="/Product/All" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/Product/All"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">商品</div>
           </HeaderNavItem>
-          <HeaderNavItem to="/About" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/About"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">關於</div>
           </HeaderNavItem>
 
-          
-          <HeaderNavItem to="/Account" className="header-nav-inactive" activeClassName="header-nav-active">
+          <HeaderNavItem
+            to="/Account"
+            className="header-nav-inactive"
+            activeClassName="header-nav-active"
+          >
             <div className="page-name">會員</div>
           </HeaderNavItem>
 
