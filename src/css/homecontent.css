@@ -33,6 +33,13 @@
   width: 180px;
   height: 180px;
   margin: auto;
+  transition: transform 250ms;
+}
+.lil-circle:hover {
+  /* width: 180px;
+  height: 180px;
+  margin: auto; */
+  transform: translateY(-10px);
 }
 .mid-tittle {
   margin-top: 10px;
