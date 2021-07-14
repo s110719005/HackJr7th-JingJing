@@ -24,16 +24,18 @@ export default function ProductItem({ product }) {
                         src={product.picture[0]}
                         alt={product.name} />
             </div>
-            <div className="">
-                {product.brand}
+            <div className="product-item-text-container">
+                <div className="product-item-brand">
+                    {product.brand}
+                </div>
+                <div className="product-item-name">
+                    {product.name}
+                </div>
+                <span
+                    className="product-item-price">
+                    NT$&nbsp;{product.originalPrice}
+                </span>
             </div>
-            <div className="">
-                {product.name}
-            </div>
-            <span
-                className="">
-                NT$&nbsp;{product.originalPrice}
-            </span>
             
         </div>
     );

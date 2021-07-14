@@ -18,33 +18,28 @@ export default function ProductList() {
             <Spin indicator={antIcon} className="spinner" />
           </div>
         ) : (
-          <Row gutter={[32, 32]}>
-            {
-              products.length===0?(
-                <div className="product-spinner-wrap">
-                  很抱歉，沒有您搜尋的商品：（
-                </div>
-              ):(
-                <div>
-                  {products.map(product => (
-                    <Col 
-                      key={product.id} 
-                      xs={{ span: 12 }} 
-                      sm={{ span: 8 }} 
-                      md={{ span: 8 }} 
-                      lg={{ span: 6 }}
-                      xl={{ span: 6 }}
-                      xxl={{ span: 2 }}
-                    >
-                        <ProductItem product={product}/>
-                    </Col>
-                  ))}
-                </div>
-              )
-            }
-            
-          
-        </Row>
+          <div className="product-list-container">
+              {
+                products.length===0?(
+                  <div className="product-spinner-wrap">
+                    很抱歉，沒有您搜尋的商品：（
+                  </div>
+                ):(
+                  <div>
+                    <Row >
+                    {products.map(product => (
+                      <Col 
+                        //key={product.id} 
+                        span={6}
+                      >
+                          <ProductItem product={product}/>
+                      </Col>
+                    ))}
+                    </Row>
+                  </div>
+                )
+              }
+          </div>
         )
       }
     </>

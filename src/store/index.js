@@ -6,6 +6,7 @@ import {
     //basic
     SET_PAGE_CONTENT,
     SET_NAVBAR_ACTIVEITEM,
+    SET_HEADERNAVBAR_ACTIVEITEM,
     //product
     BEGIN_PRODUCTS_REQUEST,
     SUCCESS_PRODUCTS_REQUEST,
@@ -53,6 +54,9 @@ const initialState = {
     navBar: {
       activeItem: "/",
     },
+    headerNav:{
+      activeItem: "/",
+    },
     //product
     requestProducts: {
       loading: false,
@@ -97,6 +101,13 @@ function reducer(state, action) {
         return {
           ...state,
           navBar: {
+            activeItem: action.payload,
+          },
+        };
+      case SET_HEADERNAVBAR_ACTIVEITEM:
+        return {
+          ...state,
+          headerNav: {
             activeItem: action.payload,
           },
         };
