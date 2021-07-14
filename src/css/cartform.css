@@ -1,0 +1,33 @@
+.container-acc3 {
+  width: 100%;
+  height: 500px;
+  border: turquoise solid 1px;
+  display: flex;
+}
+.cart-form .container-table {
+  border: turquoise solid 1px;
+  margin: auto;
+  width: 1166px;
+}
+.the-tittle2 {
+  height: 60px;
+  margin-top: 15px;
+  /* margin-bottom: 20px; */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 4rem;
+  color: #715240;
+  background-color: var(--jjLeaf);
+}
+.cart-form .ant-table {
+  color: #715240;
+  font-size: 20px;
+}
+
+.cart-form .ant-table table {
+  border: none;
+  text-align: left;
+}
+.cart-form .ant-table-pagination {
+  display: none;
+}
