@@ -239,3 +239,51 @@
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+.upload-modal .ant-modal-header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--jjGrass);
+    border: 0;
+
+    
+}
+
+.upload-modal .ant-modal-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 1rem;
+
+}
+
+.upload-modal .ant-modal-body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--jjGrass);
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+
+.upload-modal-btn{
+    color:var(--jjChoco);
+    background-color: var(--jjLemon);
+    width:8rem;
+    height:3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+    margin:1rem 0 ;
+    margin-left: 20rem;
+}
+
+.upload-modal-text{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    padding-left: 5rem;
+}

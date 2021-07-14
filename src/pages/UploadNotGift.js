@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Layout, Button } from "antd";
+import { Layout, Button,Modal } from "antd";
 import { Form,Input,DatePicker } from 'antd';
 import JJHeader from "../components/HeaderNew";
 import JJFooter from "../components/Footer";
@@ -27,6 +27,7 @@ function UploadNotGift() {
         </div>
       );
       const [size, setSize] = useState("default");
+      const [modalVisible, setModalVisible] = useState(false);
 
       const handleSizeChange = e => {
         setSize(e.target.value);
@@ -35,6 +36,30 @@ function UploadNotGift() {
     <div>
         <JJHeader />
       <div className="mainarea upload">
+            <Modal
+                title="定價說明"
+                centered
+                visible={modalVisible}
+                onOk={() => setModalVisible(false)}
+                onCancel={() => setModalVisible(false)}
+                footer={null}
+                closable={false}
+                className="upload-modal"
+            >
+                <div>
+                    <div className="upload-modal-text">
+                        ・全新：市售價50%~70%  <br></br>
+                        ・9成新：市售價50%~60% <br></br>
+                        ・7成新：市售價40% <br></br>
+                        ・5成新 ：市售價20%~30%
+                    </div>
+                    <div className="upload-modal-btn"
+                    onClick={() => setModalVisible(false)}
+                    >
+                        確認
+                    </div>
+                </div>
+            </Modal>
           <div className="donate-title">上架</div>
           <div className="upload-step1">
             <div className="upload-step22-selection">
@@ -200,7 +225,10 @@ function UploadNotGift() {
                 </div>
                 <div className="donatecard-textrow-container">
                     <div className="donatecard-row-text"></div>
-                        <div className="upload-text-salmon">定價說明</div>
+                        <div className="upload-text-salmon"
+                        style={{cursor:"pointer"}}
+                        onClick={() => setModalVisible(true)}
+                        >定價說明</div>
                 </div>
                 <div className="donatecard-detailrow-container">
                     <div className="donatecard-row-text">補充說明：</div>
@@ -244,6 +272,8 @@ function UploadNotGift() {
           
       </div>
       <JJFooter />
+      
+      
     </div>
   );
 }
