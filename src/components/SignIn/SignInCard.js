@@ -25,9 +25,12 @@ function SignInCard({ redirect }) {
         console.log("signIn!");
     }
   }, [ userInfo ]);// eslint-disable-line react-hooks/exhaustive-deps
+
     return (
-        <div className="">
-        <div className="">Log In</div>
+        <div className="signincard-content"
+            
+        >
+        <div className="signincard-title">登入</div>
         <Form
                 name="normal_login"
                 className="login-form"
@@ -37,6 +40,7 @@ function SignInCard({ redirect }) {
                 }}
                 onFinish={onLogIn}
                 >
+                <div className="signincard-subtitle">帳號</div>
                 <Form.Item
                     name="email"
                     rules={[
@@ -55,6 +59,7 @@ function SignInCard({ redirect }) {
                     placeholder="E-Mail"
                     />
                 </Form.Item>
+                <div className="signincard-subtitle">密碼</div>
                 <Form.Item
                     name="password"
                     rules={[
@@ -70,50 +75,72 @@ function SignInCard({ redirect }) {
                     placeholder="Password"
                     />
                 </Form.Item>
+                <div className="signin-remind">
+                    <Form.Item
+                        name="remember"
+                        noStyle
+                    >
+                        <Checkbox className="text-choco">保持登入</Checkbox>
+                    </Form.Item>
+                    <Form.Item>
+                        <Link className="" to={"/"}>
+                        忘記密碼?
+                        </Link>
+                    </Form.Item>
+                </div>
                 
                 {/* ///////////////////////////////////////////// */}
-                <Form.Item>
-                    {loading ? (
-                    <Button
-                        type="primary"
-                        htmlType="submit"
-                        className="login-form__button"
-                        loading
-                    >
-                        Log in
-                    </Button>
-                    ) : (
-                    <Button
-                        type="primary"
-                        htmlType="submit"
-                        className="login-form__button"
-                    >
-                        Log in
-                    </Button>
-                    )}
-                    {error === "" ? (
-                    <></>
-                    ) : (
-                    <div className="login-form__error-wrap">
-                        <h3 className="login-form__error-title">
-                        {"  "}There was a problem
-                        </h3>
-                        <p className="login-form__error-message">{error}</p>
-                    </div>
-                    )}
-                </Form.Item>
+                <div className="signin-btn-container">
+                    <Form.Item>
+                        {loading ? (
+                        <Button
+                            type="primary"
+                            htmlType="submit"
+                            className="login-form__button"
+                            loading
+                        >
+                            Log in
+                        </Button>
+                        ) : (
+                        <Button
+                            type="primary"
+                            htmlType="submit"
+                            className="signin-btn-text"
+                        >
+                            登入
+                        </Button>
+                        )}
+                        {error === "" ? (
+                        <></>
+                        ) : (
+                        <div className="login-form__error-wrap">
+                            <h3 className="login-form__error-title">
+                            {"  "}There was a problem
+                            </h3>
+                            <p className="login-form__error-message">{error}</p>
+                        </div>
+                        )}
+                    </Form.Item>
+                </div>
                     {/* ///////////////////////////////////////////// */}
                 <div className="login-form-question">
-                <Form.Item>
-                    <Link className="login-form-question-text text-purple" to={"/"}>
-                    Forgot your password ?
-                    </Link>
-                </Form.Item>
-                <Form.Item>
-                    <Link className="login-form-question-text text-purple" to={"/Register"}>
-                        Create an account !
-                    </Link>
-                </Form.Item>
+                <div className="signin-row">
+                    <div className="signin-line"></div>
+                    <div className="text-choco">&nbsp;&nbsp;其他登入&nbsp;&nbsp;</div>
+                    <div className="signin-line"></div>
+                </div>
+                <div className="signincard-sns-container">
+                    <img src="https://github.com/Singularity-v/7th-Hach/blob/main/Log_Signin/apple.png?raw=true" 
+                    alt="Background" 
+                    className="signincard-sns"/>
+                    <img src="https://github.com/Singularity-v/7th-Hach/blob/main/Log_Signin/fb.png?raw=true" 
+                    alt="Background" 
+                    className="signincard-sns"/>
+                    <img src="https://github.com/Singularity-v/7th-Hach/blob/main/Log_Signin/google.png?raw=true" 
+                    alt="Background" 
+                    className="signincard-sns"/>
+                </div>
+                
                 </div>
 
             </Form>

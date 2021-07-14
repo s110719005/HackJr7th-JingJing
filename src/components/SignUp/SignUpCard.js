@@ -20,7 +20,7 @@ function SignUpCard({ redirect }) {
     if(userInfo) history.push("/SignInUp");
   }, [ userInfo ]);// eslint-disable-line react-hooks/exhaustive-deps
     return (
-        <div className="">
+        <div className="signupcard-content">
             <div className="">&nbsp;</div>
             <div className="">&nbsp;</div>
             <div className="">&nbsp;</div>
