@@ -27,13 +27,85 @@ function Account() {
     logoutFromFirebase(dispatch);
     history.push("/");
   };
+  const [isMoment0, setIsMoment0] = useState("block");
+  const [isMoment, setIsMoment] = useState("none");
+  const [isMoment2, setIsMoment2] = useState("none");
+  const [isMoment3, setIsMoment3] = useState("none");
+  const [isMoment4, setIsMoment4] = useState("none");
   return (
     <Layout>
       <div className="main-area">
         <JJHeader />
-        <JJTopButton />
-        <JJAccMang />
-        <JJBuyForm />
+        <div className="container">
+          <div className="button-box">
+            <Button
+              className="account-button"
+              onClick={() => {
+                setIsMoment0("none");
+                setIsMoment("block");
+                setIsMoment2("none");
+                setIsMoment3("none");
+                setIsMoment4("none");
+              }}
+            >
+              會員管理
+            </Button>
+            <Button
+              className="account-button"
+              onClick={() => {
+                setIsMoment0("none");
+                setIsMoment("none");
+                setIsMoment2("block");
+                setIsMoment3("none");
+                setIsMoment4("none");
+              }}
+            >
+              賣場管理
+            </Button>
+            <Button
+              className="account-button"
+              onClick={() => {
+                setIsMoment0("none");
+                setIsMoment("none");
+                setIsMoment2("none");
+                setIsMoment3("block");
+                setIsMoment4("none");
+              }}
+            >
+              購物車
+            </Button>
+            <Button
+              className="account-button"
+              onClick={() => {
+                setIsMoment0("none");
+                setIsMoment("none");
+                setIsMoment2("none");
+                setIsMoment3("none");
+                setIsMoment4("block");
+              }}
+            >
+              申請上架/捐贈
+            </Button>
+          </div>
+        </div>
+        <div className="page0" style={{ display: isMoment0 }}>
+          <JJAccMang />
+          <JJBuyForm />
+        </div>
+        <div className="page1" style={{ display: isMoment }}>
+          <JJAccMang />
+          <JJBuyForm />
+        </div>
+        <div className="page2" style={{ display: isMoment2 }}>
+          <JJBuyForm />
+        </div>
+        <div className="page3" style={{ display: isMoment3 }}>
+          <JJAccMang />
+        </div>
+        <div className="page4" style={{ display: isMoment4 }}>
+          <JJAccMang />
+          <JJBuyForm />
+        </div>
       </div>
       <Button className="logout-button">
         <Link to="/" onClick={handleLogout}>
