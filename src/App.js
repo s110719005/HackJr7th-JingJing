@@ -11,6 +11,7 @@ import Product from './pages/Product';
 import Donate from './pages/Donate';
 import DonateFinish from './pages/DonateFinish';
 import Upload1 from './pages/Upload1';
+import UploadGift from './pages/UploadGift';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/Donate" component={Donate}/>
           <Route exact path="/FinishDonate" component={DonateFinish}/>
           <Route exact path="/UploadStep1" component={Upload1}/>
+          <Route exact path="/UploadStep2Gift" component={UploadGift}/>
           <Route exact path="/Product/:pageName" component={Product} />
 
         </Switch>
