@@ -112,5 +112,57 @@
 }
 
 .category-current-name{
-    color:var(--jjChoco);
+    color:var(--jjSalmon);
+    font-size: 20px;
+    margin: 2.5rem 0;
+    font-weight: 500;
+
+}
+
+.product-item-picture-container{
+    position: relative;
+    z-index: 1;
+    width:15rem;
+    height:15rem;
+}
+
+.product-item-picture-bg{
+    z-index: 1;
+    position: absolute;
+    width:15rem;
+    height:7.5rem;
+    background-color: var(--jjLightGrass);
+    box-shadow: 2px 2px 2px 0px var(--jjGrass);
+    border-radius: 5px;
+
+}
+
+.product-item-picture{
+    /* position: relative; */
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left:0;
+    width:15rem;
+    height:15rem;
+    padding: 0;
+    margin: 0;
+}
+
+.product-spinner-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.category-subtitle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category-select-all{
+    color:var(--jjLightChoco);
+    font-size: 20px;
+    margin: 2.5rem 0;
+    font-weight: 500;
 }
