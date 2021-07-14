@@ -164,7 +164,7 @@ function reducer(state, action) {
             },
             userSignin: {
                 ...state.userSignin,
-                userInfo: action.payload,
+                //userInfo: action.payload,
             }
         };
         case FAIL_REGISTER_REQUEST:
