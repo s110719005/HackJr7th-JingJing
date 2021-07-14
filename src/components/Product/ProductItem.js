@@ -17,9 +17,13 @@ export default function ProductItem({ product }) {
                     alt={product.name} />
                 
             </Link> */}
-            <img
-                    src={product.picture[0]}
-                    alt={product.name} />
+            <div className="product-item-picture-container">
+                <div className="product-item-picture-bg"></div>
+                <img
+                        className="product-item-picture"
+                        src={product.picture[0]}
+                        alt={product.name} />
+            </div>
             <div className="">
                 {product.brand}
             </div>

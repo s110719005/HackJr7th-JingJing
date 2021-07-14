@@ -14,14 +14,14 @@ export default function ProductList() {
     {/* hi */}
       {loading
         ? (
-          <div className="spinner-wrap">
+          <div className="product-spinner-wrap">
             <Spin indicator={antIcon} className="spinner" />
           </div>
         ) : (
           <Row gutter={[32, 32]}>
             {
               products.length===0?(
-                <div>
+                <div className="product-spinner-wrap">
                   很抱歉，沒有您搜尋的商品：（
                 </div>
               ):(
