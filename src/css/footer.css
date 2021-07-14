@@ -1,3 +1,7 @@
+.footer{
+  position: relative;
+  z-index: 10;
+}
 .lower-one {
   text-align: center;
   background: var(--jjGrass);
