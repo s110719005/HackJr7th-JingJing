@@ -1,8 +1,9 @@
 .container-form {
   margin-top: 80px;
   margin-left: 130px;
-  width: 600px;
-  border: solid red;
+  width: 680px;
+  height: 380px;
+  /* border: solid red; */
 }
 .acc-form {
   width: 600px;
@@ -12,11 +13,11 @@
   display: inline-flex;
   align-items: center;
   height: 32px;
-  color: #895d42;
+  color: #715240;
   font-size: 18px;
 }
 .ant-picker {
-  border: solid #895d42 1px;
+  border: solid #715240 1px;
 }
 .ant-picker:hover {
   border: solid var(--jjSalmon) 1.5px;
@@ -27,7 +28,7 @@
 }
 
 .ant-input {
-  border: solid #895d42 1px;
+  border: solid #715240 1px;
   width: 450px;
 }
 .ant-input:hover {
@@ -45,12 +46,12 @@
   /* border: steelblue solid; */
 }
 .first-line .ant-form-item {
-  margin-right: 30px;
+  margin-right: 46px;
 }
 
 .the-name {
   font-size: 18px;
-  line-height: 2.5rem;
+  line-height: 3.7rem;
 }
 .the-tittle {
   font-weight: bold;
@@ -58,21 +59,45 @@
   line-height: 2.5rem;
 }
 .save-button {
-  margin-left: 45%;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 43%;
   border-radius: 50px;
   background-color: var(--jjSalmon);
   /* border: none; */
   color: white;
 }
 .save-button:hover {
-  margin-left: 45%;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 43%;
   border-radius: 50px;
   border: var(--jjSalmon) solid 1px;
   color: var(--jjSalmon);
 }
 .save-button:focus {
-  margin-left: 45%;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 43%;
   border-radius: 50px;
   border: var(--jjSalmon) solid 1px;
   color: var(--jjSalmon);
+}
+
+.container-acc {
+  /* border: turquoise solid 1px; */
+  display: flex;
+}
+.ls-pic1 img {
+  width: 258px;
+  margin-top: 110%;
+  margin-left: -36%;
+}
+.ls-pic2 img {
+  width: 240px;
+  margin-top: 20%;
+  margin-left: 49%;
 }

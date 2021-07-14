@@ -14,19 +14,19 @@
   background-color: var(--jjGrass);
   width: 200px;
   height: 55px;
-  font-size: 20px;
-  color: var(--jjChoco);
+  font-size: 24px;
+  color: #715240;
   border: solid var(--jjGrass);
   border-radius: 8px;
 }
 
 .account-button:hover {
   background-color: var(--jjGrass);
-  color: var(--jjChoco);
-  border: solid var(--jjChoco);
+  color: #715240;
+  border: solid var(--jjChoco) 1px;
 }
 .account-button:focus {
   background-color: var(--jjGrass);
-  color: var(--jjChoco);
-  border: solid var(--jjChoco);
+  color: #715240;
+  border: solid var(--jjChoco) 1px;
 }
