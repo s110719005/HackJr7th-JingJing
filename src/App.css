@@ -2,16 +2,17 @@
 @import "./css/header.css";
 @import "./css/footer.css";
 @import "./css/product.css";
+@import "./css/slider.css";
 
 /* 這邊是基本ㄉ顏色 */
 :root {
   --jjGrass: #d4e09b;
-  --jjLightGrass:#eef3d7;
+  --jjLightGrass: #eef3d7;
   --jjLemon: #f6f4d2;
   --jjLeaf: #cbdfbd;
   --jjSalmon: #f19c79;
   --jjChoco: #895d42;
-  --jjLightChoco:#a98976;
+  --jjLightChoco: #a98976;
 }
 
 body {

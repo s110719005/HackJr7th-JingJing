@@ -1,0 +1,31 @@
+.lower-one {
+  text-align: center;
+  background: var(--jjGrass);
+  height: 35px;
+}
+.copyright-padding {
+  padding-top: 15px;
+}
+ul li {
+  list-style: none;
+  line-height: 3rem;
+}
+.upper-one {
+  display: flex;
+  align-items: flex-end;
+  height: 400px;
+  background-image: url(https://github.com/Singularity-v/7th-Hach/blob/main/HOME/wave_02.png?raw=true);
+}
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer-text {
+  /* border: violet solid 1px; */
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.bold {
+  font-weight: bold;
+}
