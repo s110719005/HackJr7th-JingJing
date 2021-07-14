@@ -29,10 +29,10 @@ function SignInUp(props) {
   const [signInOpen, setSignInOpen] = useState("block");//卡有沒有打開
   const [signUpOpen, setSignUpOpen] = useState("block");//卡有沒有打開
 
-  const [leftCard, setLeftCard] = useSpring(() => ({ opacity:1, config: { mass: 5, tension: 350, friction: 40 } }))//,immediate: key => key === "zIndex"
-  const [leftCardBack, setLeftCardBack] = useSpring(() => ({ opacity:0, config: { mass: 5, tension: 350, friction: 40 } }))//,immediate: key => key === "zIndex"
-  const [rightCard, setRightCard] = useSpring(() => ({ opacity:0, config: { mass: 5, tension: 350, friction: 40 } }))
-  const [rightCardBack, setRightCardBack] = useSpring(() => ({ opacity:1, config: { mass: 5, tension: 350, friction: 40 } }))
+  const [leftCard, setLeftCard] = useSpring(() => ({ opacity:1, config: { mass: 5, tension: 150, friction: 40 } }))//,immediate: key => key === "zIndex"
+  const [leftCardBack, setLeftCardBack] = useSpring(() => ({ opacity:0, config: { mass: 5, tension: 150, friction: 40 } }))//,immediate: key => key === "zIndex"
+  const [rightCard, setRightCard] = useSpring(() => ({ opacity:0, config: { mass: 5, tension: 150, friction: 40 } }))
+  const [rightCardBack, setRightCardBack] = useSpring(() => ({ opacity:1, config: { mass: 5, tension: 150, friction: 40 } }))
 
   const [form] = Form.useForm();
   const history = useHistory();
@@ -215,6 +215,28 @@ function SignInUp(props) {
                               <img src="https://github.com/Singularity-v/7th-Hach/blob/main/Log_Signin/google.png?raw=true" 
                               alt="Background" 
                               className="signincard-sns"/>
+                          </div>
+                          <div className="signupcard-signinBtn">
+                            <div className="text-choco"
+                              onClick={() => {
+                                //setSignInOpen("none");
+                                //setSignUpOpen("block");
+                                setLeftCard({
+                                  opacity:1
+                                });
+                                setLeftCardBack({
+                                  opacity:0
+                                });
+                                setRightCard({
+                                  opacity:0
+                                });
+                                setRightCardBack({
+                                  opacity:1
+                                });
+                              }}
+                              >
+                              已有帳號？ 點我登入
+                            </div>
                           </div>
 
                     </Form> 
