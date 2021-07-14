@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
-import { Layout } from "antd";
+import { Layout, Button } from "antd";
 import JJHeader from "../components/HeaderNew";
+import JJFooter from "../components/Footer";
 import JJTopButton from "../components/Account/TopButton";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -30,9 +31,12 @@ function Account() {
         <JJHeader />
         <JJTopButton />
       </div>
-      <Link to="/" onClick={handleLogout}>
-        Log Out
-      </Link>
+      <Button className="logout-button">
+        <Link to="/" onClick={handleLogout}>
+          登出
+        </Link>
+      </Button>
+      <JJFooter />
     </Layout>
   );
 }

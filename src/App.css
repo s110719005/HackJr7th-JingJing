@@ -7,6 +7,7 @@
 @import "./css/homecontent.css";
 @import "./css/signInUp.css";
 @import "./css/topbutton.css";
+@import "./css/logoutbutton.css";
 
 /* 這邊是基本ㄉ顏色 */
 :root {
