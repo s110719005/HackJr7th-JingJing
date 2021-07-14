@@ -210,7 +210,8 @@
     justify-content: center;
     border-radius: 2.5rem;
     cursor: pointer;
-    margin: 7rem 0;
+    margin: 3rem 0;
+    margin-bottom: 1rem;
     font-weight: 800;
 }
 .product-item-text-container{

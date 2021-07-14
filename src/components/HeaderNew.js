@@ -31,6 +31,7 @@ export default function Header() {
           <img
             src="https://github.com/yuumaker/7th-hack/blob/main/logo/logo.png?raw=true"
             alt="Cart"
+            className="logo-pic"
           />
         </div>
       </div>
