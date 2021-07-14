@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Layout } from "antd";
 import JJHeader from "../components/HeaderNew";
-import JJSlider from "../components/Slider";
+import JJSlider from "../components/slider";
 import JJFooter from "../components/Footer";
 
 //import { StoreContext } from "../store"

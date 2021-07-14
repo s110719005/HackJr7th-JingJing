@@ -25,6 +25,23 @@ const allUserRef = firebase.firestore().collection("allUser");
 //REFERENCE AUTH
 const auth = firebase.auth();
 
+export const getHeaderTitle = (url) => {
+  switch (url) {
+    case "/":
+      return "home";
+    case "/Product/All":
+      return "product";
+    case "/About":
+      return "about";
+    case "/Account":
+      return "account";
+    case "/SignInUp":
+      return "signIn";
+    default:
+      return "home";
+  }
+};
+
 export const getProducts = async (url) => {
   const collection = jsonInfo.find(element => element.url === url);
   //console.log(jsonInfo.find(element => element.url === url));

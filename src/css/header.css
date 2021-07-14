@@ -1,25 +1,69 @@
 .header {
   background-color: white;
   text-align: center;
-  line-height: 8rem;
-  height: 100px;
+  /* line-height: 8rem; */
+  height: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--jjChoco);
+  margin: 0px 2rem;
+  margin-top: 20px;
+
+}
+.header-row{
+  display: flex;
+  flex-direction: row;
+  line-height: 2rem;
 }
 .page-name {
-  display: inline;
-  margin: 50px;
+  /* display: inline; */
+  /* padding: 0 10px; */
+  width:6.5rem;
+  height:2rem;
+  border-radius: 2px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  
+  /* background-color: aquamarine; */
 }
 .page-name:hover {
   border: solid var(--jjChoco) 1.5px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .cart {
   width: 30px;
   height: 30px;
   margin-left: 30px;
-  margin-bottom: -7px;
+  /* margin-bottom: 7px; */
+  line-height: 2rem;
+
   /* border: solid red; */
+}
+
+.logo-text{
+  color:var(--jjSalmon);
+  font-size: 20px;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav-active{
+  background-color: var(--jjChoco);
+  color: white;
+}
+.header-nav-inactive{
+  margin:0 10px;
+}
+
+a{
+  color:var(--jjChoco)
+}
+a:hover{
+  color:var(--jjChoco);
 }

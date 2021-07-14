@@ -3,7 +3,7 @@ import { Link,useHistory  } from "react-router-dom";
 import { StoreContext } from "../../store"
 import { Form, Input, Button, Checkbox, DatePicker, Select } from 'antd';
 import { WarningOutlined } from '@ant-design/icons';
-import { registerToFirebase,checkLogin,loginToFirebase } from '../../actions'
+import { registerToFirebase,checkLogin,loginToFirebase,headerActiveNavItemSet } from '../../actions'
 
 
 function SignInCard({ redirect }) {
@@ -13,10 +13,13 @@ function SignInCard({ redirect }) {
   
   const onLogIn = async (values) => {
     console.log('Received values of form: ', values);
+    
     await loginToFirebase(dispatch, values);
   };
   
   useEffect(() => {
+    const url = window.location.pathname;
+    headerActiveNavItemSet(dispatch, url);
     if(userInfo  && checkLogin(dispatch)) {
         history.push("/Account");
         console.log("signIn!");
