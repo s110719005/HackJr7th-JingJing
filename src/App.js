@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import SignInUp from './pages/SignInUp';
 import Account from './pages/Account';
 import Product from './pages/Product';
+import Donate from './pages/Donate';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/Account" component={Account} />
           <Route exact path="/SignInUp" component={SignInUp}/>
           <Route exact path="/Product" component={Product}/>
+          <Route exact path="/Donate" component={Donate}/>
           <Route exact path="/Product/:pageName" component={Product} />
 
         </Switch>

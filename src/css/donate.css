@@ -1,0 +1,96 @@
+.donate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donatecard{
+    width:90vw;
+    /* height:15rem; */
+    background-color: var(--jjGrass);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding:2rem 0rem;
+    padding-left: 10rem;
+    padding-right: 1rem;
+     /* offset-x | offset-y | blur-radius | spread-radius | color */
+     box-shadow: 2px 2px 4px 0px rgba(137,93,66,0.4);
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.donatecard-add-btn{
+    width:4rem;
+    cursor: pointer;
+    margin-top: -3rem;
+}
+
+.donatecard-count-logo{
+    margin-top: -1rem;
+    width:4rem;
+}
+
+.donatecard-row-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:2.5rem;
+    line-height: 2.5rem;
+    margin: 0.5rem 0;
+    /* background-color: aquamarine; */
+}
+.donatecard-row-text{
+    color:var(--jjChoco);
+    font-size: 16px;
+    width:7rem;
+}
+
+.donatecard .ant-input{
+    border: 0;
+    height:2.5rem;
+    width:40rem
+}
+
+.donatecard .ant-form-item{
+    margin: 0;
+}
+
+.donatecard .ant-picker{
+    height:2.5rem;
+    width:12rem
+}
+
+.donatecard-add-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.donatecard-btn-container{
+    display: flex;
+    width: 100%;
+    /* background-color: aquamarine; */
+    justify-content: flex-end;
+}
+
+.donatecard-btn-text{
+    background-color: var(--jjChoco);
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    width:8rem;
+    height:3rem;
+    border-radius: 3rem;
+}
+
+.donate-title{
+    font-size: 30px;
+    margin: 3rem 0;
+    color:var(--jjChoco)
+}
+.donate-subtitle{
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color:var(--jjSalmon)
+}
