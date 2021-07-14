@@ -1,4 +1,4 @@
-import { Carousel } from "antd";
+import { Button, Radio } from "antd";
 export default function Slider() {
   return (
     <div>
@@ -70,7 +70,7 @@ export default function Slider() {
         </div>
       </div>
       <div className="button-box">
-        <div className="button">Hello</div>
+        <Button className="home-button">了解更多</Button>
       </div>
     </div>
   );
