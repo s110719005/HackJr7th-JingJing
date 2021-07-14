@@ -23,6 +23,9 @@ export default function ProductItem({ product }) {
                         className="product-item-picture"
                         src={product.picture[0]}
                         alt={product.name} />
+                <div className="product-item-hover">
+                NT$&nbsp;{product.nowPrice}
+                </div>
             </div>
             <div className="product-item-text-container">
                 <div className="product-item-brand">
