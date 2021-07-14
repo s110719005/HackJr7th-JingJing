@@ -65,7 +65,40 @@
 .button-box {
   width: 100%;
   height: 50px;
-  border: purple solid;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-left: 20px;
+  display: flex;
+  /* border: purple solid; */
 }
-.buton {
+.home-button {
+  width: 240px;
+  height: 60px;
+  margin: auto;
+  background: var(--jjChoco);
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 0;
+  color: white;
+}
+
+.home-button:hover {
+  width: 240px;
+  height: 60px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 0;
+  border: solid var(--jjChoco) 1px;
+  color: var(--jjChoco);
+}
+.home-button .ant-btn:hover {
+  border: solid var(--jjChoco) 1px;
+}
+.home-button .ant-btn-primary:hover {
+  border: solid var(--jjChoco) 1px;
+}
+.home-button .ant-btn-primary:focus {
+  border: solid var(--jjChoco) 1px;
 }
