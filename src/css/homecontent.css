@@ -1,0 +1,63 @@
+.banner {
+  width: 100%;
+  height: 400px;
+}
+.home-tittle {
+  /* background-color: violet; */
+  height: 406px;
+  background-image: url(https://github.com/Singularity-v/7th-Hach/blob/main/HOME/wave_01.png?raw=true);
+  font-size: 24px;
+  text-align: center;
+}
+.box {
+  width: 100%;
+  height: 90px;
+}
+.homecontent-hr {
+  width: 5%;
+  margin-top: -20px;
+  border: solid 1px;
+}
+.content1 {
+  width: 300px;
+  height: auto;
+  /* border: tomato solid; */
+  margin: auto;
+}
+
+.circle-box {
+  display: flex;
+  /* background-color: red; */
+}
+.lil-circle {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+}
+.mid-tittle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--jjChoco);
+  font-weight: 5;
+  text-align: center;
+}
+.mid-content {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.mid-box {
+  /* border: purple solid; */
+  display: flex;
+}
+.content2 {
+  width: 300px;
+  height: auto;
+  /* border: green solid; */
+  margin: auto;
+}
+.content-box {
+  /* border: blue solid; */
+  margin-top: -100px;
+}
