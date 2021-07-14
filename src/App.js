@@ -15,6 +15,7 @@ import UploadGift from './pages/UploadGift';
 import UploadFinish from './pages/UploadFinish';
 import UploadNotGift from './pages/UploadNotGift';
 import UsageIntro from './pages/UsageIntro';
+import ProductDetail from './pages/ProductDetailPage';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
           <Route exact path="/UploadStep3" component={UploadFinish}/>
           <Route exact path="/UsageIntro" component={UsageIntro}/>
           <Route exact path="/Product/:pageName" component={Product} />
+          <Route path="/item/:productId" component={ProductDetail} />
+
 
         </Switch>
       </BrowserRouter>

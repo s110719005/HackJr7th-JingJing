@@ -20,12 +20,20 @@ export default function ProductItem({ product }) {
             <div className="product-item-picture-container">
                 <div className="product-item-picture-bg"></div>
                 <img
-                        className="product-item-picture"
-                        src={product.picture[0]}
-                        alt={product.name} />
-                <div className="product-item-hover">
-                NT$&nbsp;{product.nowPrice}
-                </div>
+                    className="product-item-picture"
+                    src={product.picture[0]}
+                    alt={product.name} 
+                />
+                <Link to={`/item/${product.id}`}
+                    onClick={()=>{
+                        setProductDetail(dispatch, product.id);
+                    }}
+                >
+                    <div className="product-item-hover">
+                    NT$&nbsp;{product.nowPrice}
+                    </div>
+                </Link>
+
             </div>
             <div className="product-item-text-container">
                 <div className="product-item-brand">

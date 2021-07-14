@@ -1,0 +1,21 @@
+.productDetail{
+    width:100%;
+}
+
+.productDetail-bigpic-container{
+    width:50rem;
+    height:30rem;
+    background-color: rgba(137,93,66,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDetail-bigpic{
+    width:45rem; 
+}
+
+.productDetail-content{
+    display: flex;
+    flex-direction: row;
+}

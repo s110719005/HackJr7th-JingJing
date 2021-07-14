@@ -62,6 +62,12 @@ export const getProducts = async (url) => {
   return jsonProducts;
 }
 
+export const getProductById = async (productId) => {
+  // REFERENCE PRODUCTS COLLECTION
+  const doc = await allProductsCollectionRef.doc(productId).get();
+  return doc.data()
+}
+
 export const signInWithEmailPassword = async (email, password) => {
     return await auth.signInWithEmailAndPassword(email, password);
   }

@@ -7,6 +7,7 @@ import {
     SET_PAGE_CONTENT,
     SET_NAVBAR_ACTIVEITEM,
     SET_HEADERNAVBAR_ACTIVEITEM,
+    SET_PRODUCT_DETAIL,
     //product
     BEGIN_PRODUCTS_REQUEST,
     SUCCESS_PRODUCTS_REQUEST,
@@ -56,6 +57,11 @@ const initialState = {
     },
     headerNav:{
       activeItem: "/",
+    },
+    productDetail: {
+      product: {
+        image:[],
+      },
     },
     //product
     requestProducts: {
@@ -111,6 +117,8 @@ function reducer(state, action) {
             activeItem: action.payload,
           },
         };
+      case SET_PRODUCT_DETAIL:
+        return { ...state, productDetail: action.payload };
       //product request
       case BEGIN_PRODUCTS_REQUEST:
         return { ...state, requestProducts: { ...state.requestProducts, loading: true } }
