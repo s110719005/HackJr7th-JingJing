@@ -3,6 +3,7 @@ import { Layout, Button } from "antd";
 import JJHeader from "../components/HeaderNew";
 import JJFooter from "../components/Footer";
 import JJTopButton from "../components/Account/TopButton";
+import JJAccMang from "../components/Account/AccMang";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -30,6 +31,7 @@ function Account() {
       <div className="main-area">
         <JJHeader />
         <JJTopButton />
+        <JJAccMang />
       </div>
       <Button className="logout-button">
         <Link to="/" onClick={handleLogout}>

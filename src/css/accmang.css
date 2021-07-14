@@ -1,0 +1,48 @@
+.container-form {
+  margin-top: 100px;
+  margin-left: 130px;
+  width: 600px;
+  border: solid red;
+}
+.acc-form {
+  width: 600px;
+}
+.ant-form-item-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  color: #895d42;
+  font-size: 14px;
+}
+.ant-picker {
+  border: solid #895d42 1px;
+}
+.ant-picker:hover {
+  border: solid var(--jjSalmon) 1.5px;
+}
+
+.ant-picker:focus {
+  border: solid var(--jjSalmon) 1.5px;
+}
+
+.ant-input {
+  border: solid #895d42 1px;
+  width: 450px;
+}
+.ant-input:hover {
+  border: solid var(--jjSalmon) 1.5px;
+}
+
+.ant-input:focus {
+  border: solid var(--jjSalmon) 1.5px;
+}
+.phone-number {
+  width: 200px;
+}
+.first-line {
+  display: flex;
+  /* border: steelblue solid; */
+}
+.first-line .ant-form-item {
+}
