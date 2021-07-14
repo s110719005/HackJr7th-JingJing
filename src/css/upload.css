@@ -1,0 +1,48 @@
+.upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-notgift-btn{
+    margin-right: 16rem;
+    cursor: pointer;
+}
+.upload-gift-btn{
+    margin-left: 16rem;
+    cursor: pointer;
+}
+.upload-step1{
+    display:flex;
+    flex-direction: row;
+}
+
+.upload-step1-selection{
+    margin-left: 18rem;
+}
+
+.upload-step1-pic-container{
+    margin-left: 5rem;
+
+}
+
+.upload-step1-hint{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0;
+    margin-left: 6rem;
+}
+
+.upload-line{
+    border-bottom: 2px solid var(--jjSalmon);
+    width:10rem;
+    height:2px;
+}
+
+.upload-text{
+    color:var(--jjSalmon);
+    font-size: 20px;
+    letter-spacing: 8px;
+}
