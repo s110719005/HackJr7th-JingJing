@@ -38,7 +38,7 @@ export default function Header() {
             <img
               src="https://github.com/Singularity-v/7th-Hach/blob/main/HOME/cart.png?raw=true"
               alt="Cart"
-              className=""
+              className="cart"
             />
           </Link>
         </div>
@@ -64,7 +64,7 @@ export default function Header() {
             <img
               src="https://github.com/Singularity-v/7th-Hach/blob/main/HOME/cart.png?raw=true"
               alt="Cart"
-              className=""
+              className="cart"
             />
           </Link>
         </div>
