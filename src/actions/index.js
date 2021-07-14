@@ -50,6 +50,13 @@ import {
     }
   };
 
+  export const activeNavItemSet = (dispatch, activeNavItem) => {
+    dispatch({
+      type: SET_NAVBAR_ACTIVEITEM,
+      payload: activeNavItem,
+    });
+  };
+
   export const loginToFirebase = async (dispatch, userInfo) => {
     dispatch({ type: BEGIN_LOGIN_REQUEST });
     try {

@@ -6,6 +6,7 @@ import ProductList from "../components/Product/ProductList";
 import { StoreContext } from "../store"
 import {setPage} from "../actions"
 import {getTitle} from "../utils"
+import CategoryCard from "../components/Product/CategoryCard";
 
 
 
@@ -17,10 +18,16 @@ function Product() {
     setPage(dispatch,url, getTitle(url));
   }, []);// eslint-disable-line react-hooks/exhaustive-deps 
   return (
-    <div className="login-main-area">
+    <div className="">
         <JJHeader/>
-        Product
-        <ProductList/>
+        <div className="mainarea">
+          Product
+          <CategoryCard/>
+          <div className="category-current-name">
+            {title}
+          </div>
+          <ProductList/>
+        </div>
     </div>
   );
 }
