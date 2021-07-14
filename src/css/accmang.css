@@ -1,5 +1,5 @@
 .container-form {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 130px;
   width: 600px;
   border: solid red;
@@ -7,13 +7,13 @@
 .acc-form {
   width: 600px;
 }
-.ant-form-item-label {
+.ant-form-item-label > label {
   position: relative;
   display: inline-flex;
   align-items: center;
   height: 32px;
   color: #895d42;
-  font-size: 14px;
+  font-size: 18px;
 }
 .ant-picker {
   border: solid #895d42 1px;
@@ -45,4 +45,34 @@
   /* border: steelblue solid; */
 }
 .first-line .ant-form-item {
+  margin-right: 30px;
+}
+
+.the-name {
+  font-size: 18px;
+  line-height: 2.5rem;
+}
+.the-tittle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 2.5rem;
+}
+.save-button {
+  margin-left: 45%;
+  border-radius: 50px;
+  background-color: var(--jjSalmon);
+  /* border: none; */
+  color: white;
+}
+.save-button:hover {
+  margin-left: 45%;
+  border-radius: 50px;
+  border: var(--jjSalmon) solid 1px;
+  color: var(--jjSalmon);
+}
+.save-button:focus {
+  margin-left: 45%;
+  border-radius: 50px;
+  border: var(--jjSalmon) solid 1px;
+  color: var(--jjSalmon);
 }

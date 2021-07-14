@@ -14,10 +14,10 @@ export default function Slider() {
   return (
     <div className="container-form">
       <div className="acc-form text-choco">
-        <div>帳號管理</div>
-        <div>姓名：撿帽靈</div>
+        <div className="the-tittle text-choco">帳號管理</div>
+        <div className=" the-name text-choco">姓名:撿帽靈</div>
 
-        <Form className="text-choco">
+        <Form>
           <div className="first-line">
             <Form.Item label="電話號碼">
               <Input className="phone-number" />
@@ -36,7 +36,7 @@ export default function Slider() {
             <Input />
           </Form.Item>
           <Form.Item>
-            <Button>儲存</Button>
+            <Button className="save-button">更新</Button>
           </Form.Item>
         </Form>
       </div>
