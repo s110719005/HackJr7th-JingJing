@@ -79,16 +79,17 @@ function onChange(value) {
 export default function BuyForm() {
   const [checkStrictly, setCheckStrictly] = React.useState(false);
   return (
-    <div className="container-acc2">
+    <div className="container-acc3">
       <div className="container-table">
         <div className="the-tittle2">出貨進度查詢</div>
-
         <Table
           columns={columns}
           rowSelection={{ ...rowSelection, checkStrictly }}
           dataSource={data}
           className="cart-form"
         />
+        <div className="the-fake-line"></div>
+        <div className="the-total">總計 2 項商品，共計NT$ 999 </div>
       </div>
     </div>
   );

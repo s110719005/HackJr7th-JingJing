@@ -19,6 +19,32 @@
   color: #715240;
   background-color: var(--jjLeaf);
 }
+.the-fake-line {
+  margin-top: 15px;
+  /* margin-bottom: 20px; */
+  width: 100%;
+  border-bottom: #715240 solid 1px;
+}
+.the-total {
+  height: 120px;
+  margin-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 24px;
+  line-height: 7rem;
+  color: #715240;
+  background-color: #e6e5db;
+}
+.the-button {
+  height: 120px;
+  margin-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 24px;
+  line-height: 7rem;
+  color: #715240;
+  background-color: #e6e5db;
+}
 .cart-form .ant-table {
   color: #715240;
   font-size: 20px;
