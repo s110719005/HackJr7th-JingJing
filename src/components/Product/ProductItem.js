@@ -11,12 +11,15 @@ export default function ProductItem({ product }) {
                 onClick={()=>{
                     setProductDetail(dispatch, product.id, 1,0,0);
                 }}
-            > */}
+            >
                 <img
                     src={product.picture[0]}
                     alt={product.name} />
                 
-            {/* </Link> */}
+            </Link> */}
+            <img
+                    src={product.picture[0]}
+                    alt={product.name} />
             <div className="">
                 {product.brand}
             </div>

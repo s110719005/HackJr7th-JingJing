@@ -1,17 +1,82 @@
 [   
     {
-       "title": "All",
+       "title": "全部",
        "name": "products",
        "url": "/Product/All"
     },
     {
-       "title": "Toner",
+       "title": "化妝水",
        "name": "toner",
        "url": "/Product/Toner"
     },
     {
-       "title": "Eyeshadow",
+       "title": "眼部彩妝",
        "name": "eyeshadow",
        "url": "/Product/Eyeshadow"
+    },
+    {
+       "title": "防曬乳",
+       "name": "sunscreen",
+       "url": "/Product/Sunscreen"
+    },
+    {
+       "title": "妝前乳/飾底乳",
+       "name": "primer",
+       "url": "/Product/Primer"
+    },
+    {
+       "title": "修容",
+       "name": "contouring",
+       "url": "/Product/Contouring"
+    },
+    {
+       "title": "粉底液",
+       "name": "foundation",
+       "url": "/Product/Foundation"
+    },
+    {
+       "title": "遮瑕",
+       "name": "concealer",
+       "url": "/Product/Concealer"
+    },
+    {
+       "title": "氣墊粉餅",
+       "name": "pressedPowder",
+       "url": "/Product/PressedPowder"
+    },
+    {
+       "title": "唇頰彩妝",
+       "name": "lipblush",
+       "url": "/Product/LipBlush"
+    },
+    {
+       "title": "其他",
+       "name": "else",
+       "url": "/Product/Else"
+    },
+    {
+       "title": "乳液",
+       "name": "lotion",
+       "url": "/Product/Lotion"
+    },
+    {
+       "title": "面膜",
+       "name": "facialMask",
+       "url": "/Product/FacialMask"
+    },
+    {
+       "title": "蠟燭",
+       "name": "candle",
+       "url": "/Product/Candle"
+    },
+    {
+       "title": "精油",
+       "name": "essentialOil",
+       "url": "/Product/EssentialOil"
+    },
+    {
+       "title": "香水",
+       "name": "perfume",
+       "url": "/Product/Perfume"
     }
  ]

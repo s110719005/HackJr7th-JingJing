@@ -6,6 +6,7 @@
 /* 這邊是基本ㄉ顏色 */
 :root {
   --jjGrass: #d4e09b;
+  --jjLightGrass:#eef3d7;
   --jjLemon: #f6f4d2;
   --jjLeaf: #cbdfbd;
   --jjSalmon: #f19c79;
@@ -14,7 +15,11 @@
 }
 
 body {
-  background-color: var(--jjLeaf);
+  /* background-color: var(--jjLeaf); */
+}
+
+.mainarea {
+  padding: 0 4.5rem;
 }
 
 /* 基本字型規範 */

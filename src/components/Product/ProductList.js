@@ -19,19 +19,30 @@ export default function ProductList() {
           </div>
         ) : (
           <Row gutter={[32, 32]}>
-            {products.map(product => (
-            <Col 
-              key={product.id} 
-              xs={{ span: 12 }} 
-              sm={{ span: 8 }} 
-              md={{ span: 8 }} 
-              lg={{ span: 6 }}
-              xl={{ span: 6 }}
-              xxl={{ span: 2 }}
-            >
-                <ProductItem product={product}/>
-            </Col>
-          ))}
+            {
+              products.length===0?(
+                <div>
+                  很抱歉，沒有您搜尋的商品：（
+                </div>
+              ):(
+                <div>
+                  {products.map(product => (
+                    <Col 
+                      key={product.id} 
+                      xs={{ span: 12 }} 
+                      sm={{ span: 8 }} 
+                      md={{ span: 8 }} 
+                      lg={{ span: 6 }}
+                      xl={{ span: 6 }}
+                      xxl={{ span: 2 }}
+                    >
+                        <ProductItem product={product}/>
+                    </Col>
+                  ))}
+                </div>
+              )
+            }
+            
           
         </Row>
         )
