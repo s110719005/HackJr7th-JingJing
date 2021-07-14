@@ -1,0 +1,23 @@
+.container-acc3 {
+  width: 100%;
+  height: 300px;
+  /* border: turquoise solid 1px; */
+  display: flex;
+}
+.container-text {
+  width: 1166px;
+  /* border: turquoise solid 1px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.notice-content {
+  color: #715240;
+  font-size: 20px;
+  line-height: 2rem;
+}
+.special-a {
+  color: #3936e5;
+}
+.special-a:hover {
+  color: var(--jjSalmon);
+}
