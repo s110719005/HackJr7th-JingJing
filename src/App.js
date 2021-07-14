@@ -14,6 +14,7 @@ import Upload1 from './pages/Upload1';
 import UploadGift from './pages/UploadGift';
 import UploadFinish from './pages/UploadFinish';
 import UploadNotGift from './pages/UploadNotGift';
+import UsageIntro from './pages/UsageIntro';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/UploadStep2Gift" component={UploadGift}/>
           <Route exact path="/UploadStep2NotGift" component={UploadNotGift}/>
           <Route exact path="/UploadStep3" component={UploadFinish}/>
+          <Route exact path="/UsageIntro" component={UsageIntro}/>
           <Route exact path="/Product/:pageName" component={Product} />
 
         </Switch>

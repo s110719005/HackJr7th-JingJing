@@ -35,7 +35,7 @@ function UploadNotGift() {
     <div>
         <JJHeader />
       <div className="mainarea upload">
-          <div className="donate-title">上架ya</div>
+          <div className="donate-title">上架</div>
           <div className="upload-step1">
             <div className="upload-step22-selection">
             <div className="donatecard-row-container">
@@ -177,7 +177,9 @@ function UploadNotGift() {
                 </div>
                 <div className="donatecard-textrow-container">
                     <div className="donatecard-row-text"></div>
-                        <div className="upload-text-salmon">使用程度劃分說明</div>
+                        <Link to="/UsageIntro">
+                            <div className="upload-text-salmon">使用程度劃分說明</div>
+                        </Link>
                 </div>
                 <div className="donatecard-pricerow-container">
                     <div className="donatecard-row-text">預期價格：</div>
