@@ -58,6 +58,7 @@
 }
 
 .donatecard .ant-picker{
+    border: 0;
     height:2.5rem;
     width:12rem
 }
@@ -93,4 +94,71 @@
     font-size: 30px;
     margin-bottom: 2rem;
     color:var(--jjSalmon)
+}
+
+.donateFinish{
+    background-color: var(--jjGrass);
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donateFinish-bg{
+    position: absolute;
+    z-index: 1;
+    background-color: var(--jjLeaf);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    /* margin-top: 25vh; */
+    width:100vw;
+    height:50vh;
+    border-radius: 6px;
+
+}
+
+.donateFinish-card{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    height:80vh;
+    width:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    flex-direction: column;
+
+
+}
+
+.donateFinish-pic{
+
+}
+
+.donateFinish-choco-text{
+    font-size: 30px;
+    color: var(--jjChoco);
+    font-weight: 500;
+    margin:1.5rem 0;
+
+}
+.donateFinish-green-text{
+    font-size: 30px;
+    color: var(--jjGrass);
+    font-weight: 500;
+}
+.donateFinish-back-btn{
+    background-color: var(--jjChoco);
+    color:white;
+    width:12rem;
+    height:3rem;
+    border-radius: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 20px;
+    margin:2rem 0;
+
 }

@@ -29,6 +29,7 @@ function Donate() {
         console.log('Received values of form: ', values);
         console.log(values.name);
         form.resetFields();
+        history.push("/FinishDonate");
        // await loginToFirebase(dispatch, values);
       };
   

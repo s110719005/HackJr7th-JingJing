@@ -81,6 +81,7 @@
 .signInUp-mainarea .ant-input{
     border: 2px solid var(--jjChoco);
     height:3rem;
+    width:100%;
 }
 
 .signInUp-mainarea .ant-input-affix-wrapper{

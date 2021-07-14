@@ -9,6 +9,7 @@ import SignInUp from './pages/SignInUp';
 import Account from './pages/Account';
 import Product from './pages/Product';
 import Donate from './pages/Donate';
+import DonateFinish from './pages/DonateFinish';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/SignInUp" component={SignInUp}/>
           <Route exact path="/Product" component={Product}/>
           <Route exact path="/Donate" component={Donate}/>
+          <Route exact path="/FinishDonate" component={DonateFinish}/>
           <Route exact path="/Product/:pageName" component={Product} />
 
         </Switch>
