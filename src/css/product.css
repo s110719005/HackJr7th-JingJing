@@ -162,6 +162,7 @@
     color:white;
     font-size: 30px;
     opacity: 0;
+    border-radius: 5px;
 }
 .product-item-hover:hover{
     opacity: 1;
