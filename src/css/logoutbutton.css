@@ -1,5 +1,7 @@
 .logout-button {
-  margin-left: 76.8%;
+  margin-top: 30px;
+  margin-left: 81%;
+  margin-bottom: -90px;
   width: 150px;
   height: 50px;
   background-color: var(--jjSalmon);
