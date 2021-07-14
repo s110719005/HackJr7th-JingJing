@@ -69,7 +69,9 @@ export default function Slider() {
           </div>
         </div>
       </div>
-      <div className="buttoon-box"></div>
+      <div className="button-box">
+        <div className="button">Hello</div>
+      </div>
     </div>
   );
 }

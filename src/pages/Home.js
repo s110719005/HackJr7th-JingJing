@@ -13,7 +13,7 @@ function Home() {
   return (
     <Layout>
       <JJHeader />
-      <hr />
+
       <JJSlider />
       <JJContent />
       <JJFooter />
