@@ -28,11 +28,13 @@ export default function Header() {
       <div className="logo-container">
         {/* <div>logo</div> */}
         <div className="logo-text">
-          <img
-            src="https://github.com/yuumaker/7th-hack/blob/main/logo/logo.png?raw=true"
-            alt="Cart"
-            className="logo-pic"
-          />
+          <Link to="/">
+            <img
+              src="https://github.com/yuumaker/7th-hack/blob/main/logo/logo.png?raw=true"
+              alt="Cart"
+              className="logo-pic"
+            />
+          </Link>
         </div>
       </div>
       {userInfo === null ? (
