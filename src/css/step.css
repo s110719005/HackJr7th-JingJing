@@ -50,5 +50,13 @@
   > .ant-steps-item-container
   > .ant-steps-item-content
   > .ant-steps-item-title {
+  font-size: 20px;
   color: #895d42;
+}
+.ant-steps-item-wait
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  font-size: 20px;
+  color: #9d9d9d;
 }

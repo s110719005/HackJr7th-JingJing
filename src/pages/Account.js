@@ -8,6 +8,7 @@ import JJBuyForm from "../components/Account/BuyForm";
 import JJSaleForm from "../components/Account/SaleForm";
 import JJNotice from "../components/Account/Notice";
 import JJSteps from "../components/Account/Steps";
+import JJCart from "../components/Account/CartForm";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -105,6 +106,7 @@ function Account() {
         </div>
         <div className="page3" style={{ display: isMoment3 }}>
           <JJSteps />
+          <JJCart />
         </div>
         <div className="page4" style={{ display: isMoment4 }}>
           <JJAccMang />

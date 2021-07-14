@@ -58,7 +58,12 @@ export default function BuyForm() {
     <div className="container-acc2">
       <div className="container-table">
         <div className="the-tittle">出貨進度查詢</div>
-        <Table columns={columns} dataSource={data} scroll={{ x: 1900 }} />
+        <Table
+          className="for-sale"
+          columns={columns}
+          dataSource={data}
+          scroll={{ x: 1900 }}
+        />
       </div>
     </div>
   );
