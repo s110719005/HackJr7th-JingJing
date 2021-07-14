@@ -149,6 +149,24 @@
     margin: 0;
 }
 
+.product-item-hover{
+    position: absolute;
+    z-index: 3;
+    width:15rem;
+    height:15rem;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 15rem;
+    color:white;
+    font-size: 30px;
+    opacity: 0;
+}
+.product-item-hover:hover{
+    opacity: 1;
+}
+
 .product-spinner-wrap{
     display: flex;
     justify-content: center;
@@ -215,3 +233,4 @@
     margin:0.5rem 0;
     text-decoration:line-through;
 }
+
