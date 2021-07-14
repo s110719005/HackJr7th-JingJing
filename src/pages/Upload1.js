@@ -22,11 +22,13 @@ function Upload1() {
           <div className="donate-title">上架</div>
           <div className="upload-step1">
             <div className="upload-step1-selection">
-                <img
+                <Link to="/UploadStep2NotGift">
+                  <img
                         className="upload-notgift-btn"
                         src="https://github.com/Singularity-v/7th-Hach/blob/main/DONATE&SUS/not_gift.png?raw=true"
                         alt="add button" 
                     />
+                </Link>
                     <div className="upload-step1-hint">
                         <div className="upload-line"></div>
                         <div className="upload-text">&nbsp;&nbsp;&nbsp;是否為贈品&nbsp;&nbsp;&nbsp;</div>
