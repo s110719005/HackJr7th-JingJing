@@ -115,3 +115,20 @@
     text-align: center;
     margin-left: 16rem;
 }
+
+.uploadFinish-btn-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+}
+
+.uploadFinish-salmon-btn{
+    background-color: var(--jjSalmon);
+}
+
+.upload-step3-pic{
+    position: absolute;
+    z-index: 5;
+    right:4.8rem;
+}

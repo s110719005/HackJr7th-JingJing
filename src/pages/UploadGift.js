@@ -121,7 +121,7 @@ function UploadGift() {
                 />
             </div>
           </div>
-          <Link to="/FinishUpload">
+          <Link to="/UploadStep3">
                 <div className="upload-gift-finish-btn">送出</div>
           </Link>
 
