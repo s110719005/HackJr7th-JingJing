@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 @import "./css/home.css";
 @import "./css/header.css";
 @import "./css/footer.css";
@@ -19,7 +19,9 @@
 body {
   /* background-color: var(--jjLeaf); */
 }
-
+.ant-layout {
+  background-color: white;
+}
 .mainarea {
   padding: 0 4.5rem;
 }
