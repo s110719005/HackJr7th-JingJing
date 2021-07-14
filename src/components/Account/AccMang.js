@@ -10,7 +10,7 @@ import {
   TreeSelect,
   Switch,
 } from "antd";
-export default function Slider() {
+export default function AccMang() {
   return (
     <div className="container-acc">
       <div className="container-form">

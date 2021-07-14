@@ -4,6 +4,7 @@ import JJHeader from "../components/HeaderNew";
 import JJFooter from "../components/Footer";
 import JJTopButton from "../components/Account/TopButton";
 import JJAccMang from "../components/Account/AccMang";
+import JJBuyForm from "../components/Account/BuyForm";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -32,6 +33,7 @@ function Account() {
         <JJHeader />
         <JJTopButton />
         <JJAccMang />
+        <JJBuyForm />
       </div>
       <Button className="logout-button">
         <Link to="/" onClick={handleLogout}>
