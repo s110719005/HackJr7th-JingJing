@@ -5,6 +5,8 @@ import JJFooter from "../components/Footer";
 import JJTopButton from "../components/Account/TopButton";
 import JJAccMang from "../components/Account/AccMang";
 import JJBuyForm from "../components/Account/BuyForm";
+import JJSaleForm from "../components/Account/SaleForm";
+import JJNotice from "../components/Account/Notice";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -97,7 +99,8 @@ function Account() {
           <JJBuyForm />
         </div>
         <div className="page2" style={{ display: isMoment2 }}>
-          <JJBuyForm />
+          <JJSaleForm />
+          <JJNotice />
         </div>
         <div className="page3" style={{ display: isMoment3 }}>
           <JJAccMang />
