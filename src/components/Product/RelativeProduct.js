@@ -22,7 +22,7 @@ export default function RelativeProduct() {
             <Spin indicator={antIcon} className="spinner" />
           </div>
         ) : (
-          <div className="product-list-container">
+          <div className="product-list-container mainarea">
               
               {
                 product.length===0?(
@@ -32,24 +32,34 @@ export default function RelativeProduct() {
                 ):(
                   <div>
                     相關產品
-                    <Row >
-                    {product.products.map((relativeProduct,index) => (
-                      <Col 
-                        //key={product.id} 
-                        span={6}
-                      >
-                          {index>=3?(
-                              <div>
-                              </div>
-                          ):(
-                              <div>
-                                 <RelativeProductItem product={relativeProduct}/>
-                              </div>
-                          )}
-                         
-                      </Col>
-                    ))}
-                    </Row>
+                    <div className="relative-product-list-container">
+                        <img
+                        className="relative-product-arrow"
+                        src="https://github.com/Singularity-v/7th-Hach/blob/main/ProductDetail/detail_pre.png?raw=true"
+                        alt="arrow"
+                        />
+                        <div className="relative-product-listimg-container">
+                            {product.products.map((relativeProduct,index) => (
+                            <div>
+                                {index>=3?(
+                                    <div>
+                                    </div>
+                                ):(
+                                    <div>
+                                        <RelativeProductItem product={relativeProduct}/>
+                                    </div>
+                                )}
+                                
+                            </div>
+                            
+                            ))}
+                        </div>
+                        <img
+                        className="relative-product-arrow"
+                        src="https://github.com/Singularity-v/7th-Hach/blob/main/ProductDetail/detail_nex.png?raw=true"
+                        alt="arrow"
+                        />
+                    </div>
                   </div>
                 )
               }
