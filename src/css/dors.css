@@ -1,0 +1,43 @@
+.container-dors {
+  width: 100%;
+  height: 600px;
+  /* border: turquoise solid 1px; */
+  display: flex;
+}
+.dors-box {
+  margin-bottom: 40px;
+  margin-top: 60px;
+  /* border: red solid 1px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1166px; */
+  display: flex;
+}
+
+.dos-pic1 img {
+  width: 555px;
+  height: 323px;
+  margin-right: 50px;
+}
+.dos-pic2 img {
+  margin-left: 50px;
+  margin-top: 175px;
+  width: 555px;
+  height: 323px;
+}
+.choice {
+  width: 16px;
+  height: 540px;
+}
+.choice {
+  padding-top: 70px;
+  /* border: red solid 1px; */
+  font-size: 24px;
+  line-height: 28px;
+  color: #895d42;
+}
+.choice hr {
+  border: solid #895d42 1px;
+  width: 0;
+  height: 140px;
+}

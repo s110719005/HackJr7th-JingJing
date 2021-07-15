@@ -10,6 +10,7 @@ import JJNotice from "../components/Account/Notice";
 import JJSteps from "../components/Account/Steps";
 import JJCart from "../components/Account/CartForm";
 import JJCartBtn from "../components/Account/CartBtn";
+import JJDors from "../components/Account/DorS";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -111,8 +112,7 @@ function Account() {
           <JJCartBtn />
         </div>
         <div className="page4" style={{ display: isMoment4 }}>
-          <JJAccMang />
-          <JJBuyForm />
+          <JJDors />
         </div>
       </div>
       <Button className="logout-button">
