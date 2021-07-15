@@ -3,6 +3,8 @@ import { Select, Row, Col, Spin } from "antd";
 import { LoadingOutlined } from '@ant-design/icons';
 import { StoreContext } from "../../store"
 import { setProductDetail } from "../../actions";
+import { Link } from "react-router-dom";
+
 
 const { Option } = Select;
 
@@ -48,16 +50,19 @@ function ProductDetail() {
                      </div>
                   </div>
                   <div>
-                     <div className="">{product.brand}</div>
-                     <div className="">{product.name}</div>
-                     <div className="">{product.categoryC}</div>
-                     <div className="">原價：{product.originalPrice}</div>
-                     <div className="">淨・靚價：{product.nowPrice}</div>
-                     <div className="">保存期限：{product.expireDate}</div>
-                     <div className="">使用程度：{product.useRate}</div>
-                     <div className="">程度劃分說明</div>
-                     <div className="">加入購物車</div>
-                     <div className="">立即購買</div>
+                     <div className="productdetail-brand">{product.brand}</div>
+                     <div className="productdetail-name">{product.name}</div>
+                     <div className="productdetail-description">{product.description}</div>
+                     <div className="productdetail-category">{product.categoryC}</div>
+                     <div className="productdetail-originalPrice">原價：{product.originalPrice}</div>
+                     <div className="productdetail-nowPrice">淨・靚價：{product.nowPrice}</div>
+                     <div className="productdetail-expireDate">保存期限：{product.expireDate}</div>
+                     <div className="productdetail-useRate">使用程度：{product.useRate}</div>
+                     <Link to="/UsageIntro">
+                        <div className="productdetail-usageIntro">程度劃分說明</div>
+                     </Link>
+                     <div className="productdetail-add-btn">加入購物車</div>
+                     <div className="productdetail-buy-btn">立即購買</div>
                   </div>
                </div>
             )

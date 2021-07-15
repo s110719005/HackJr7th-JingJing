@@ -31,7 +31,10 @@ export default function RelativeProduct() {
                   </div>
                 ):(
                   <div>
-                    相關產品
+                    <div className="relative-product-title-container">
+                      <div className="relative-product-title">相關產品</div>
+                      <div className="relative-product-title-line"></div>
+                    </div>
                     <div className="relative-product-list-container">
                         <img
                         className="relative-product-arrow"

@@ -237,32 +237,3 @@
 }
 
 
-.relative-product-item-picture-container{
-    position: relative;
-    z-index: 1;
-    width:15rem;
-    height:15rem;
-    background-color: rgba(137,93,66,0.1);
-    margin: 0 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.relative-product-list-container{
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.relative-product-arrow{
-    width:2rem;
-    height:2rem;
-    margin: 0 4rem;
-    cursor: pointer;
-}
-
-.relative-product-listimg-container{
-    display: flex;
-    flex-direction: row;
-}

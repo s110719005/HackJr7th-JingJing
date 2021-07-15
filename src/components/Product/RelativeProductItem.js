@@ -28,10 +28,13 @@ export default function RelativeProductItem({ product }) {
 
             </div>
             <div className="product-item-text-container">
-                <div className="product-item-brand">
+                <div className="product-item-brand relative-text">
                     {product.brand}
                 </div>
-                <div className="product-item-name">
+                <div className="product-item-name relative-text">
+                    {product.description}
+                </div>
+                <div className="product-item-name relative-text">
                     {product.name}
                 </div>
                 <span
