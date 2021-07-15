@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext,useState } from "react";
 import { Select, Row, Col, Spin } from "antd";
 import { LoadingOutlined } from '@ant-design/icons';
 import { StoreContext } from "../../store"
@@ -8,13 +8,15 @@ const { Option } = Select;
 
 function ProductDetail() {
    const { state: { productDetail: { product}, requestProducts: { loading } }, dispatch } = useContext(StoreContext);
-   const antIcon = <LoadingOutlined style={{ fontSize: 80, color: "#8183ff" }} spin />;
+   const antIcon = <LoadingOutlined style={{ fontSize: 80, color: "#f19c79" }} spin />;
+
+   const [nowPic, setNowPic] = useState(0);//卡有沒有打開
 
    return (
       <div className="mainarea productDetail">
          {loading
             ? (
-               <div className="spinner-wrap">
+               <div className="productDetail-spinner-wrap">
                   <Spin indicator={antIcon} className="spinner" />
                </div>
             ) : (
@@ -23,12 +25,26 @@ function ProductDetail() {
                      <div className="productDetail-bigpic-container">
                         <img
                         className="productDetail-bigpic"
-                        src={product.picture[0]}
+                        src={product.picture[nowPic]}
                         alt={product.name} 
                         />
                      </div>
-                     <div>
-                        map
+                     <div className="productDetail-smallpic-map">
+                        {product.picture.map((productPic,index) => (
+                        
+                           <div className="productDetail-smallpic-container"
+                                 onClick={() => {
+                                    setNowPic(index);
+                                 }}
+                           >
+                              <img
+                                 className="productDetail-smallpic"
+                                 src={product.picture[index]}
+                                 alt={product.name} 
+                              />
+                           </div>
+                        
+                     ))}
                      </div>
                   </div>
                   <div>

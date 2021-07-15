@@ -57,15 +57,32 @@ import {
     }
   };
 
-  export const setProductDetail = async(dispatch, productId) => {
-    const product = await getProductById(productId);
-    dispatch({
-      type: SET_PRODUCT_DETAIL,
-      payload: {
-        product,
-      }
-    })
-  };
+  // export const setProductDetail = async(dispatch, productId) => {
+  //   const product = await getProductById(productId);
+  //   dispatch({
+  //     type: SET_PRODUCT_DETAIL,
+  //     payload: {
+  //       product,
+  //     }
+  //   })
+  // };
+
+  export const setProductDetail = async (dispatch, productId) => {
+    dispatch({ type: BEGIN_PRODUCTS_REQUEST });
+    try {
+      const product = await getProductById(productId);
+        dispatch({
+          type: SET_PRODUCT_DETAIL,
+          payload: {
+            product,
+          }
+        })
+      dispatch({ type: SUCCESS_PRODUCTS_REQUEST });
+    } catch (error) {
+      console.log(error);
+      dispatch({ type: FAIL_PRODUCTS_REQUEST, payload: error });
+    }
+  }
 
   export const activeNavItemSet = (dispatch, activeNavItem) => {
     dispatch({
