@@ -1,12 +1,14 @@
 .container-acc3 {
   width: 100%;
   height: 500px;
-  border: turquoise solid 1px;
+  /* border: turquoise solid 1px; */
   display: flex;
 }
-.cart-form .container-table {
-  border: turquoise solid 1px;
-  margin: auto;
+.container-table3 {
+  margin-top: 40px;
+  /* border: turquoise solid 1px; */
+  margin-left: auto;
+  margin-right: auto;
   width: 1166px;
 }
 .the-tittle2 {
