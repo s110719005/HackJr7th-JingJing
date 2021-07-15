@@ -3,7 +3,7 @@ import { Link,useHistory } from 'react-router-dom';
 import { StoreContext } from "../../store"
 import { setProductDetail,setRelative } from "../../actions";
 
-export default function ProductItem({ product }) {
+export default function RelativeProductItem({ product }) {
     const { dispatch } = useContext(StoreContext);
   const history = useHistory();
 
@@ -14,32 +14,17 @@ export default function ProductItem({ product }) {
       };
     return (
         <div className="">
-            {/* <Link to={`/product/${product.id}`}
-                onClick={()=>{
-                    setProductDetail(dispatch, product.id, 1,0,0);
-                }}
-            >
-                <img
-                    src={product.picture[0]}
-                    alt={product.name} />
-                
-            </Link> */}
-            <div className="product-item-picture-container">
-                <div className="product-item-picture-bg"></div>
+            <div className="relative-product-item-picture-container">
                 <img
                     className="product-item-picture"
                     src={product.picture[0]}
                     alt={product.name} 
                 />
-                {/* <Link to={`/item/${product.id}`}
-                    
-                > */}
                     <div className="product-item-hover"
                     onClick={onClick}
                     >
                     NT$&nbsp;{product.nowPrice}
                     </div>
-                {/* </Link> */}
 
             </div>
             <div className="product-item-text-container">

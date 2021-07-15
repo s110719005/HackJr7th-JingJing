@@ -61,6 +61,23 @@ export const getProducts = async (url) => {
   });
   return jsonProducts;
 }
+export const getRelativeProducts = async (categoryName,id) => {
+  const collectionName = categoryName;
+  //const collectionName = "allProducts";
+  
+  let jsonProducts = [];
+
+  // QUERY PRODUCTS
+  let querySnapshot;
+  querySnapshot = await allProductsCollectionRef.where("category", "==", collectionName).get();
+  querySnapshot.forEach((doc) => {
+    if(doc.data().id===id){}
+    else
+      jsonProducts.push(doc.data());
+  });
+  console.log(jsonProducts);
+  return jsonProducts;
+}
 
 export const getProductById = async (productId) => {
   // REFERENCE PRODUCTS COLLECTION

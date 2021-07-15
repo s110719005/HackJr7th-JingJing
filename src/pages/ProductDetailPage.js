@@ -6,6 +6,7 @@ import { StoreContext } from "../store";
 
 import JJHeader from "../components/HeaderNew";
 import JJFooter from "../components/Footer";
+import RelativeProduct from "../components/Product/RelativeProduct";
 //import { StoreContext } from "../store"
 
 const { Header, Content, Footer } = Layout;
@@ -17,6 +18,7 @@ function ProductDetailPage({ match }) {
     <div>
         <JJHeader/>
         <ProductDetail/>
+        <RelativeProduct/>
         <JJFooter/>
     </div>
   );

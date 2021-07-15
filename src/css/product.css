@@ -236,3 +236,11 @@
     text-decoration:line-through;
 }
 
+
+.relative-product-item-picture-container{
+    position: relative;
+    z-index: 1;
+    width:15rem;
+    height:15rem;
+    background-color: rgba(137,93,66,0.1);
+}

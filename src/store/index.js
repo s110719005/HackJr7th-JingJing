@@ -8,10 +8,15 @@ import {
     SET_NAVBAR_ACTIVEITEM,
     SET_HEADERNAVBAR_ACTIVEITEM,
     SET_PRODUCT_DETAIL,
+    SET_RELATIVE_PRODUCT_DETAIL,
     //product
     BEGIN_PRODUCTS_REQUEST,
     SUCCESS_PRODUCTS_REQUEST,
     FAIL_PRODUCTS_REQUEST,
+    //product
+    BEGIN_RELATIVE_PRODUCTS_REQUEST,
+    SUCCESS_RELATIVE_PRODUCTS_REQUEST,
+    FAIL_RELATIVE_PRODUCTS_REQUEST,
     //login
     BEGIN_LOGIN_REQUEST,
     SUCCESS_LOGIN_REQUEST,
@@ -63,8 +68,15 @@ const initialState = {
         image:[],
       },
     },
+    relativeProductDetail: {
+      product: [],
+    },
     //product
     requestProducts: {
+      loading: false,
+      error: null,
+    },
+    requestRelativeProducts: {
       loading: false,
       error: null,
     },
@@ -126,6 +138,15 @@ function reducer(state, action) {
         return { ...state, requestProducts: { ...state.requestProducts, loading: false } }
       case FAIL_PRODUCTS_REQUEST:
         return { ...state, requestProducts: { ...state.requestProducts, loading: false, error: action.payload } }
+      //relative product
+      case SET_RELATIVE_PRODUCT_DETAIL:
+        return { ...state, relativeProductDetail: {...state.relativeProductDetail,product:action.payload}};
+      case BEGIN_RELATIVE_PRODUCTS_REQUEST:
+        return { ...state, requestRelativeProducts: { ...state.requestRelativeProducts, loading: true } }
+      case SUCCESS_RELATIVE_PRODUCTS_REQUEST:
+        return { ...state, requestRelativeProducts: { ...state.requestRelativeProducts, loading: false } }
+      case FAIL_RELATIVE_PRODUCTS_REQUEST:
+        return { ...state, requestRelativeProducts: { ...state.requestRelativeProducts, loading: false, error: action.payload } }
       //login
       case BEGIN_LOGIN_REQUEST:
           return { ...state, userSignin: { ...state.userSignin, loading: true } };

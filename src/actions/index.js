@@ -4,10 +4,14 @@ import {
     SET_NAVBAR_ACTIVEITEM,
     SET_HEADERNAVBAR_ACTIVEITEM,
     SET_PRODUCT_DETAIL,
+    SET_RELATIVE_PRODUCT_DETAIL,
     //product
     BEGIN_PRODUCTS_REQUEST,
     SUCCESS_PRODUCTS_REQUEST,
     FAIL_PRODUCTS_REQUEST,
+    BEGIN_RELATIVE_PRODUCTS_REQUEST,
+    SUCCESS_RELATIVE_PRODUCTS_REQUEST,
+    FAIL_RELATIVE_PRODUCTS_REQUEST,
     //login
     BEGIN_LOGIN_REQUEST,
     SUCCESS_LOGIN_REQUEST,
@@ -23,6 +27,7 @@ import {
     //product
     getProducts,
     getProductById,
+    getRelativeProducts,
     //sign in
     signInWithEmailPassword,
     signOut,
@@ -54,6 +59,23 @@ import {
     } catch (error) {
       console.log(error);
       dispatch({ type: FAIL_PRODUCTS_REQUEST, payload: error });
+    }
+  };
+  export const setRelative = async (dispatch, categoryName,id) => {
+    let products = [];
+    dispatch({ type: BEGIN_RELATIVE_PRODUCTS_REQUEST });
+    try {
+      products = await getRelativeProducts(categoryName,id);
+      console.log(products);
+      dispatch({
+        type: SET_RELATIVE_PRODUCT_DETAIL,
+        payload: { products },
+      });
+      dispatch({ type: SUCCESS_RELATIVE_PRODUCTS_REQUEST });
+      
+    } catch (error) {
+      console.log(error);
+      dispatch({ type: FAIL_RELATIVE_PRODUCTS_REQUEST, payload: error });
     }
   };
 
