@@ -192,6 +192,7 @@
     text-align: center;
     letter-spacing: 2px;
     margin:1rem 0;
+    cursor: pointer;
 }
 .productdetail-buy-btn{
     color:white;
@@ -204,4 +205,5 @@
     line-height: 3rem;
     text-align: center;
     letter-spacing: 2px;
+    cursor: pointer;
 }
