@@ -1,5 +1,5 @@
 import { Button, Radio } from "antd";
-export default function Slider() {
+export default function CartBut() {
   return (
     <div className="container-cart">
       <div className="button-box-cart">
