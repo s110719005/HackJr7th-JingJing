@@ -28,7 +28,7 @@ function Product() {
     
     <div className="">
         <JJHeader/>
-        <div className="mainarea">
+        <div className="mainarea product-main">
           <CategoryCard/>
           <div className="category-subtitle-container">
             <div className="category-current-name">
