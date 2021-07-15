@@ -1,0 +1,21 @@
+.container-about {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  border: solid green 1px;
+}
+.about-box {
+  margin: auto;
+}
+.about1 img {
+  width: 1260px;
+  height: 367px;
+}
+.about2 img {
+  width: 1036px;
+  height: 634px;
+}
+.about3 img {
+  width: 879px;
+  height: 654px;
+}
