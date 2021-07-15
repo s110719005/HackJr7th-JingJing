@@ -2,3 +2,7 @@ hr {
   width: 95%;
   color: var(--jjChoco);
 }
+
+.slider{
+  margin-top: 2rem;
+}
