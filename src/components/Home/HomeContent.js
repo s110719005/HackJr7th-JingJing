@@ -1,5 +1,12 @@
 import { Button, Radio } from "antd";
+import { Link,useHistory } from "react-router-dom";
+
 export default function Slider() {
+  const history = useHistory();
+  const onClick = () => {
+    history.push("/About");
+    
+  };
   return (
     <div>
       <div className="home-tittle">
@@ -70,7 +77,9 @@ export default function Slider() {
         </div>
       </div>
       <div className="button-box">
-        <Button className="home-button">了解更多</Button>
+          <Button className="home-button"
+          onClick={onClick}
+          >了解更多</Button>
       </div>
     </div>
   );
