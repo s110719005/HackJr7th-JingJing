@@ -1,33 +1,38 @@
-.container {
+.container-cart {
   width: 100%;
+  display: flex;
 
-  border: solid green;
+  /* border: solid green; */
 }
-.button-box {
-  margin: 0 auto;
+.button-box-cart {
   width: 80%;
   height: 100px;
-
-  border: solid blue;
+  margin-top: 65px;
+  margin-bottom: 100px;
+  margin-left: 190px;
+  display: flex;
+  flex-direction: row-reverse;
+  /* border: solid blue; */
 }
-.account-button {
-  margin: auto;
-  background-color: var(--jjGrass);
+
+.cart-button {
+  margin: 20px;
+  background-color: var(--jjLeaf);
   width: 200px;
   height: 55px;
   font-size: 24px;
   color: #715240;
-  border: solid var(--jjGrass);
-  border-radius: 8px;
+  border: solid var(--jjLeaf);
+  border-radius: 50px;
 }
 
-.account-button:hover {
-  background-color: var(--jjGrass);
+.cart-button:hover {
+  background-color: var(--jjLeaf);
   color: #715240;
   border: solid var(--jjChoco) 1px;
 }
-.account-button:focus {
-  background-color: var(--jjGrass);
+.cart-button:focus {
+  background-color: var(--jjLeaf);
   color: #715240;
   border: solid var(--jjChoco) 1px;
 }

@@ -1,10 +1,10 @@
 import { Button, Radio } from "antd";
 export default function Slider() {
   return (
-    <div className="container">
-      <div className="button-box">
-        <Button className="account-button">會員管理</Button>
-        <Button className="account-button">賣場管理</Button>
+    <div className="container-cart">
+      <div className="button-box-cart">
+        <Button className="cart-button">繼續購物</Button>
+        <Button className="cart-button">進行結帳</Button>
       </div>
     </div>
   );

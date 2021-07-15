@@ -80,7 +80,7 @@ export default function BuyForm() {
   const [checkStrictly, setCheckStrictly] = React.useState(false);
   return (
     <div className="container-acc3">
-      <div className="container-table">
+      <div className="container-table3">
         <div className="the-tittle2">出貨進度查詢</div>
         <Table
           columns={columns}
